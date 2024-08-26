@@ -1,0 +1,21 @@
+OBJ carro <<
+-----marca <- "Tesla"
+-----modelo <- "Model S"
+-----ano <- 2023
+-OBJ-motor <<
+----------tipo <- "Elétrico"
+----------potencia <- "1000 cv"
+----------torque <- "1000 Nm"
+-----transmissao <- "Automática"
+-----cor <- "Prata"
+-OBJ-interior <<
+----------material_bancos <- "Couro sintético"
+------OBJ-sistema_infotainment <<
+---------------tela_tamanho <- "15 polegadas"
+---------------conectividade <- "Wi-Fi, Bluetooth"
+-OBJ-seguranca <<
+----------freios_abs <- True
+------OBJ-airbags <<
+---------------frontais <- 6
+---------------laterais << 4
+---------------cortina << 2

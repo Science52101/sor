@@ -1,0 +1,7 @@
+OBJ objeto <<
+-----nome_do_objeto <- valor_do_objeto
+-OBJ-outroobjeto <<
+----------subobjeto1 <- valor_subobjeto1
+----------subobjeto2 <- 42
+----------subobjeto3 <- texto_subobjeto3
+-----mais_um_objeto <- None

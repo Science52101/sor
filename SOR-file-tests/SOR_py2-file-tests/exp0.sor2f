@@ -1,0 +1,26 @@
+myobj
+<<
+-- let myInt : int := 100
+-- let myFloat : float := 50.5
+-- r <:< myInt
+-- r <+< myFloat
+-- equation <:: *[ $r$ == $myInt$ + $myFloat$ ]*
+**
+myobj2
+<<
+mySubObj
+<<<<
+---- myValue <:: 128
+****
+OBJC
+<<<<
+---- let myobj2_String : str := 5
+---- myobj2_myInt <:: 5
+---- myobj2_String <+: str($myobj2_myInt$)
+---- equation <:< myobj2_String
+---- equation <=: "55"
+---- get myValue : mySubObj
+---- test <:: *[ $myValue$ + 128 ]*
+---- equation2 <:: *[ $test$ == 256 ]*
+----
+**

@@ -1,0 +1,21 @@
+OBJ personagem <<
+-----nome <- "Gandalf, o Cinzento"
+-----classe <- "Mago"
+-----nivel <- 10
+-OBJ-atributos <<
+----------forca <- 3
+----------destreza <- 6
+----------inteligencia <- 10
+----------constituicao <- 4
+-OBJ-inventario <<
+----------espada_magica <- 1
+----------poção_cura <- 3
+------OBJ-livro_encantamentos <<
+---------------feitiço_fogo <- 1
+---------------feitiço_curar <- 2
+-----pontos_vida <- 50
+-OBJ-status <<
+----------status_atual <- "Explorando masmorras"
+------OBJ-efeitos_status <<
+---------------queimadura <- False
+---------------envenenamento <- True

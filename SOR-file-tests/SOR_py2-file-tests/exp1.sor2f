@@ -1,0 +1,18 @@
+mesa
+<<
+copinho
+<<<<
+secao1
+<<<<<<
+------ lapis2 <:: 2
+------ lapis3 <:: 3
+******
+secao2
+<<<<<<
+------ lapis <:: 1
+****
+OBJC
+<<<<
+---- get lapis2 :< copinho\secao1
+---- ... Teste
+**

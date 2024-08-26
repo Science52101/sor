@@ -1,0 +1,113 @@
+object
+<<
+-- ... Use `python3 <path to SOR2.py> <path to file> <print, print-json, print-filecontent>` to use SOR.
+-- ... Comments are started with `...`.
+-- ... Lines start with `--` times the 'depth' of the object.
+-- ... Objects start with its name, `<<` times the depth, its lines or sub objects and end with `**` times the depth.
+-- ... The depth of an object represents how many containing objects contain it.
+-- ... Objects can hold values or other objects.
+-- ... Naming objects, which hold values, can only hold values.
+-- my_value1 <:: 128
+-- my_value2 <:: "abc"
+-- my_value3 <:: 2.718281828
+**
+
+object2
+<<
+
+subobj
+<<<<
+---- ... Containing objects, which hold objects, can only hold sub objects.
+---- ... Sub objects can hold values or objects.
+---- subobj_value1 <:: "Hello, World!"
+****
+
+subobj2
+<<<<
+
+subsubobj
+<<<<<<
+------ ... Sub objects can hold other objects.
+------ ... The syntax adapts as the depth increases.
+------ subsubobj_value1 <:: 2048
+******
+
+subsubobj2
+<<<<<<
+------ subsubobj_value2 <:: 3.14159265
+******
+
+OBJC
+<<<<<<
+------ ... OBJC sub objects represent the object that contains it.
+------ ... OBJC sub objects can access other sub object's values.
+------ get subsubobj_value1 : subsubobj
+------ subobj2_value <:: "test"
+------ ... This is equivalent to `fetch subsubobj_value from subsubobj`
+------ ... Other information about OBJC are mentioned below.
+
+****
+
+OBJC
+<<<<
+---- ... OBJC (short for 'OBJect Content') sub objects in an object that holds sub objects represent the object that
+holds
+
+it.
+---- ... All values or objects held by OBJC sub objects will lately become values from its containing object.
+---- object2_value <:: "The quick brown fox jumps over the lazy dog."
+---- ... Getting a value from subobj2\OBJC is actually getting a value from subobj2.
+---- get subobj2_value : subobj2
+
+**
+
+operations
+<<
+-- ... Note: Values are also called 'names'.
+-- ... 3-part operations
+-- ... 3-part operations are made of three parts:
+-- ... - n : the name to be operated.
+-- ... - op: the operation, with 3 characters.
+-- ... - v : the value to operate the name.
+-- ... Which are placed as: `-- <n> <op> <v>`.
+-- ... xmv: setting a value from an expression to a name.
+-- a <:: 2
+-- b <:: 3
+-- ... which is the same as
+-- a xmv 2
+-- b xmv 3
+-- ... nmv: setting a value from a name to a name.
+-- c <:< b
+-- d <:< a
+-- ... which is the same as
+-- c nmv b
+-- d nmv a
+-- ... whose values are:
+-- ... `c <:: 3 &&& d <:: 2`
+-- ... xsm: summing a value from an expression to a name.
+-- c <+: 5
+-- d <+: 2
+-- ... which is the same as
+-- ... c xsm 5
+-- ... d xsm 2
+-- ... whose values are:
+-- ... `c <:: 3+5 &&& d <:: 2+2`
+-- ... `c <:: 8   &&& d <:: 4`
+-- ...
+-- ... Other operations exist
+-- ... This example file is a WIP.
+**
+
+values
+<<
+-- ... Values can be defined with type by using `let <name> : <type> := <expression>`
+-- let some_value : int := 3
+-- ... This is equivalent to `set some_value as int eq 3`
+-- ... Values types may change or automatically convert in operations.
+-- some_value </: 2
+-- ... All expressions are written in the same way as in python.
+-- ... To use values from the same object in expressions, write them like `$this$`.
+-- ... To write expressions with spaces or blank characters, write them like `*[ this ]*`.
+-- let some_other_value : int := *[ $some_value$ * 2 ]*
+-- some_third_value <:: *[ float( str($some_other_value$) + str($some_value$) ) ]*
+**
