@@ -23,7 +23,7 @@ SOR
 
 <h2 align="center">About the project</h3>
 
-This is an experimental .sorxf file reader with no current pourpose or application.
+This is an experimental Simple Object Reader X File (.sorxf) file reader with Simple Object Syntax (SOS) support collection with no current pourpose or application.
 
 Any contribuitions or suggestions from unknown/anonymous people aren't accepted for this project.
 
@@ -35,7 +35,7 @@ If the project satisfies any pourpose, the community will be able to participate
 
 The instalation process is unavailable, but the software can be experimented by cloning the repository with git: 
 ```
-git clone https://github.com/akai-keisanki/sor.git
+git clone https://github.com/Science52101/sor.git
 ```
 
 Check SOR versions in the `SOR` directory.

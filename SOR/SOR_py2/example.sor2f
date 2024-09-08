@@ -1,6 +1,7 @@
 object
 <<
 -- ... Use `python3 <path to SOR2.py> <path to file> <print, print-json, print-filecontent>` to use SOR.
+-- ... SOR_py2 (Simple Object Reader (for Python) 2) can only read .sorxf (Simple Object Reader X File), .sor2f (Simple Object Reader 2 File) files in SOS2 (Simple Object Syntax 2). For .sorxf or .sor1f files in SOS1, please use the standard SOR_py.
 -- ... Comments are started with `...`.
 -- ... Lines start with `--` times the 'depth' of the object.
 -- ... Objects start with its name, `<<` times the depth, its lines or sub objects and end with `**` times the depth.
