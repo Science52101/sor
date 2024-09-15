@@ -1,5 +1,5 @@
 <h1
-align="center"><img src="https://raw.githubusercontent.com/akai-keisanki/sor/All/sor-logo.png" alt="Python" width="32" heigth="32"/>
+align="center"><img src="https://raw.githubusercontent.com/Science52101/sor/All/sor-logo.png" alt="SOR" width="32" heigth="32"/>
 SOR
 </h1>
 <h3 align="center">(Simple Object Reader)</h3>
