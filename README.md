@@ -29,6 +29,8 @@ Any contribuitions or suggestions from unknown/anonymous people aren't accepted 
 
 If the project satisfies any pourpose, the community will be able to participate in the project's aim and specific decisions.
 
+Check more about it: <https://science52101.github.io/details/projects/sor.html>
+
 <br><br>
 
 <h2 align="center">Instalation</h2>
